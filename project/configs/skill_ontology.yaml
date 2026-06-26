@@ -1,0 +1,72 @@
+groups:
+  retrieval:
+    - RAG
+    - embeddings
+    - vector search
+    - Elasticsearch
+    - Milvus
+    - FAISS
+    - Weaviate
+    - Qdrant
+    - OpenSearch
+    - Pinecone
+    - hybrid search
+    - retrieval
+    - ranking
+    - LangChain
+    - Hugging Face
+  ml_core:
+    - PyTorch
+    - TensorFlow
+    - Machine Learning
+    - Deep Learning
+    - NLP
+    - Computer Vision
+    - MLOps
+    - LLMs
+    - Fine-tuning LLMs
+    - Transformers
+    - Scikit-learn
+    - Keras
+    - XGBoost
+    - Feature Engineering
+    - Model Deployment
+  eval:
+    - NDCG
+    - MRR
+    - MAP
+    - A/B testing
+    - evaluation
+  infra:
+    - Python
+    - Docker
+    - Kubernetes
+    - AWS
+    - GCP
+    - Azure
+    - Spark
+    - Airflow
+    - SQL
+
+edges:
+  RAG: [retrieval, LLMs]
+  LangChain: [retrieval, LLMs]
+  Milvus: [vector search, retrieval]
+  Pinecone: [vector search, retrieval]
+  PyTorch: [Deep Learning, Machine Learning]
+  TensorFlow: [Deep Learning, Machine Learning]
+  LoRA: [Fine-tuning LLMs, LLMs]
+  QLoRA: [Fine-tuning LLMs, LLMs]
+  Feature Engineering: [Machine Learning]
+  MLOps: [Model Deployment, Machine Learning]
+  Hugging Face: [Transformers, NLP]
+  Elasticsearch: [vector search, retrieval]
+  FAISS: [vector search, retrieval]
+
+required_aliases:
+  embeddings: [sentence-transformers, BGE, E5, embedding]
+  vector search: [vector database, Milvus, Pinecone, FAISS, Weaviate, Qdrant]
+  python: [Python]
+  ndcg: [NDCG]
+  mrr: [MRR]
+  map: [MAP]

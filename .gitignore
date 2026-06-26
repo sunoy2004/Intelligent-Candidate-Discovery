@@ -1,2 +1,42 @@
+# Hackathon data and templates (local only)
 Idea Submission Template _ Redrob.pptx
 \[PUB\] India_runs_data_and_ai_challenge/
+analysis_extracts/
+__MACOSX/
+.DS_Store
+
+# Source analysis markdown (compiled into README.md)
+DATASET_OVERVIEW.md
+JOB_ANALYSIS.md
+FEATURE_ANALYSIS.md
+SIGNAL_ANALYSIS.md
+SUBMISSION_REQUIREMENTS.md
+RISKS_AND_INSIGHTS.md
+project/docs/
+project/README.md
+build_readme.py
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Project artifacts and caches
+project/outputs/*
+!project/outputs/.gitkeep
+project/models/*
+!project/models/.gitkeep
+project/notebooks/.ipynb_checkpoints/
+*.parquet
+*.npy
+*.npz
+*.pkl
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db

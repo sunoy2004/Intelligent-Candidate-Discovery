@@ -1,0 +1,32 @@
+paths:
+  candidates_jsonl: "../[PUB] India_runs_data_and_ai_challenge/[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/candidates.jsonl"
+  job_description: "data/job_description.txt"
+  outputs_dir: "outputs"
+  models_dir: "models"
+  job_features: "outputs/job_features.json"
+  candidate_features: "outputs/candidate_features.parquet"
+  candidate_ids: "outputs/candidate_ids.json"
+  candidate_embeddings: "outputs/candidate_embeddings.npy"
+  jd_embedding: "outputs/jd_embedding.npy"
+  semantic_scores: "outputs/semantic_scores.npy"
+  explanations: "outputs/explanations.json"
+  submission: "outputs/submission.csv"
+  validator: "../[PUB] India_runs_data_and_ai_challenge/[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/validate_submission.py"
+
+models:
+  embedding_model: "BAAI/bge-small-en-v1.5"
+  reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  embedding_batch_size: 256
+  reranker_batch_size: 32
+
+embedding_weights:
+  career: 0.60
+  title: 0.25
+  summary: 0.15
+
+ranking:
+  top_k_prerank: 500
+  top_k_final: 100
+  reference_date: "2026-06-25"
+
+semantic_method: tfidf

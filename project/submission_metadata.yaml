@@ -1,0 +1,36 @@
+team_name: "your-team-name-here"
+primary_contact:
+  name: "Full Name"
+  email: "primary@example.com"
+  phone: "+91-XXXXXXXXXX"
+team_members:
+  - name: "Member 1"
+    email: "member1@example.com"
+    role: "ML Engineer"
+github_repo: "https://github.com/sunoy2004/Intelligent-Candidate-Discovery"
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+reproduce_command: "python rank.py --candidates ../[PUB] India_runs_data_and_ai_challenge/[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/candidates.jsonl --out outputs/submission.csv"
+compute:
+  platform: "Windows 11"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 8
+ai_tools_used:
+  - "Cursor"
+ai_usage_summary: |
+  Used Cursor for architecture and implementation. No candidate data sent to external LLM APIs during ranking.
+methodology_summary: |
+  Multi-signal ranker: chunked TF-IDF semantic match on career text, ontology-based skill scoring,
+  title taxonomy experience fit, behavioral availability multiplier, startup/product fit, career growth,
+  and trap penalties. Top 500 cross-encoder reranked to final 100 with hallucination-safe reasoning.
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

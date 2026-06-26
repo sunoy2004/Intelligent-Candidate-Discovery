@@ -1,0 +1,12 @@
+semantic_score: 0.30
+skill_score: 0.20
+experience_score: 0.15
+behavior_score: 0.15
+startup_score: 0.10
+career_growth_score: 0.10
+trap_penalty_max: 0.35
+availability_multiplier: true
+availability_min: 0.70
+availability_max: 1.10
+top_k_prerank: 500
+rerank_blend: 0.30

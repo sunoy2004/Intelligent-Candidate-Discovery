@@ -1,0 +1,53 @@
+tier_a:
+  - ML Engineer
+  - AI Engineer
+  - Data Scientist
+  - Search Engineer
+  - Applied ML Engineer
+  - Senior AI Engineer
+  - Senior Machine Learning Engineer
+  - Machine Learning Engineer
+  - AI Research Engineer
+  - Senior Data Scientist
+  - Lead AI Engineer
+  - Staff Machine Learning Engineer
+  - Junior ML Engineer
+  - AI Specialist
+
+tier_b:
+  - Software Engineer
+  - Senior Software Engineer
+  - Backend Engineer
+  - Full Stack Developer
+  - Cloud Engineer
+  - Data Engineer
+  - Analytics Engineer
+  - Platform Engineer
+  - Senior Software Engineer (ML)
+
+tier_c:
+  - Business Analyst
+  - HR Manager
+  - Accountant
+  - Marketing Manager
+  - Content Writer
+  - Graphic Designer
+  - Sales Executive
+  - Customer Support
+  - Operations Manager
+  - Mechanical Engineer
+  - Civil Engineer
+  - Project Manager
+
+tier_a_score: 1.0
+tier_b_score: 0.7
+tier_c_score: 0.2
+default_score: 0.4
+
+jd_title_aliases:
+  - Senior AI Engineer
+  - ML Engineer
+  - Machine Learning Engineer
+  - AI Engineer
+  - Search Engineer
+  - Applied ML Engineer
