@@ -193,7 +193,7 @@ E:\H2S\
 | `sample_submission.csv` | CSV structure example only | Medium |
 | `submission_metadata_template.yaml` | Team/repo/sandbox metadata for Stage 3+ | High |
 | `README.docx` | Getting-started guide | Medium |
-| `Idea Submission Template _ Redrob.pptx` | Separate hackathon pitch template | No |
+
 
 ### Critical Files for the Challenge
 
